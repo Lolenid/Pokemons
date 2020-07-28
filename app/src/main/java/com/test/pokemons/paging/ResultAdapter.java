@@ -89,7 +89,7 @@ public class ResultAdapter extends PagedListAdapter<ApiRequest.Result, ResultAda
             new DiffUtil.ItemCallback<ApiRequest.Result>() {
                 @Override
                 public boolean areItemsTheSame(ApiRequest.Result oldResult, ApiRequest.Result newResult) {
-                    return oldResult.name == newResult.name;
+                    return oldResult.name.equals(newResult.name);
                 }
 
 
